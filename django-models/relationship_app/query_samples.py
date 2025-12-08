@@ -9,7 +9,7 @@ from relationship_app.models import Author, Book, Library, Librarian
 
 "List all books in a library."
 library_name = "Central Library"  # Replace with the actual library name
-library = Library.objects.get(name=library_name)
+[library = Library.objects.get(name=library_name)]
 library_books = library.books.all()
 print(f"Books in {library.name}: {[book.title for book in library_books]}")
 
