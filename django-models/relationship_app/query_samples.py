@@ -7,7 +7,7 @@ django.setup()
 
 from relationship_app.models import Author, Book, Library, Librarian
 
-List all books in a library.
+"List all books in a library."
 library_name = "Central Library"  # Replace with the actual library name
 library = Library.objects.get(name=library_name)
 library_books = library.books.all()
